@@ -4,7 +4,7 @@ import PotionTile from "./PotionTile";
 function Shop({ potions, addToInventory }) {
   const potionList = potions.map((potion) => {
     return (
-      <PotionTile key={potion.id} potion={potion} method={addToInventory}>
+      <PotionTile key={potion.id} className= "card"potion={potion} method={addToInventory}>
         <h4 className="potion-header">{potion.name}</h4>
       </PotionTile>
     );

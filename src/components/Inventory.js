@@ -6,7 +6,7 @@ function Inventory({ inventory, potions, sell, shake, stopShake, gold }) {
   const inventoryList = inventory.map((item) => {
     const potion = potions.find((potion) => potion.id === item.id);
     return (
-      <PotionTile key={potion.id} potion={potion} method={sell}>
+      <PotionTile key={potion.id} potion={potion} className="inventory-card" method={sell}>
         <h4>
           {potion.name} x {item.amount}
         </h4>
